@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />        
+        <link rel="stylesheet" href="./styles.css"/>  
+        <title>Kevin Figueroa | Proyecto GassMosfismo</title>
+    </head>
+    <body>
+        <main>
+            <div id="glass_box"></div>
+            <section>
+                <label>Chose color</label>
+                <input type="color" id="color" value="#FFFFFF"/>
+
+                <label>Opacity</label>
+                <input type="range" id="opacity" value="25" data-unit="%"/>
+                <span>0</span>
+
+                <label>Blur</label>
+                <input type="range" id="blur" value="9" min="0" max="200" data-unit="px"/>
+                <span>0</span>
+
+                <label>Contrast</label>
+                <input type="range" id="contrast" value="100" data-unit="%"/>
+                <span>0</span>
+
+                <label>Brightness</label>
+                <input type="range" id="brightness" value="100" data-unit="%"/>
+                <span>0</span>
+
+                <label>Saturate</label>
+                <input type="range" id="saturate" value="0" data-unit="%"/>
+                <span>0</span>
+
+                <label>Invert</label>
+                <input type="range" id="invert" value="0" data-unit="%"/>
+                <span>0</span>
+
+                <label>Size</label>
+                <input type="range" id="size" value="500" min="0" max="600" data-unit="px"/>
+                <span>0</span>
+
+                <label>Border radius</label>
+                <input type="range" id="radius" min="0" max="50" data-unit="%"/>
+                <span>0</span>
+
+                <pre><code id="outputContainer"></code></pre>
+            </section>
+        </main>
+        <script type="text/javascript" src="./main.js"></script>
+    </body>
+</html>
